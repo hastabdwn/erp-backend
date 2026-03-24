@@ -4,7 +4,7 @@
   "description": "Backend ERP System - Node.js, JWT, PostgreSQL",
   "main": "src/app.js",
   "scripts": {
-    "start": "node src/app.js",
+    "start": "node migrations/run.js && node src/app.js",
     "dev": "nodemon src/app.js",
     "migrate": "node migrations/run.js",
     "migrate:fresh": "node migrations/run.js --fresh",
