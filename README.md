@@ -1,21 +1,21 @@
-# 🏭 ERP Backend System
+# ERP Backend System
 **Node.js + Express + JWT + PostgreSQL**
 
 ## Modul Yang Tersedia
 | Modul | Endpoint Base | Deskripsi |
 |-------|---------------|-----------|
-| 🔐 Auth | `/api/v1/auth` | Login, logout, refresh token, profil |
-| 📊 Dashboard | `/api/v1/dashboard` | Ringkasan & widget semua modul |
-| ⚙️ Pengaturan | `/api/v1/settings` | Perusahaan, user, COA, departemen |
-| 💰 Keuangan | `/api/v1/finance` | Jurnal, buku besar, laporan keuangan |
-| 🧾 Invoice | `/api/v1/invoices` | Buat, kirim, catat pembayaran invoice |
-| 📦 Inventori | `/api/v1/inventory` | Produk, stok, pergerakan barang |
-| 🛒 Pembelian | `/api/v1/purchases` | PR, PO, penerimaan barang, supplier |
-| 🏷️ Penjualan | `/api/v1/sales` | SO, pelanggan, pengiriman, analitik |
-| 🏭 Produksi | `/api/v1/production` | BOM, Work Order, QC |
-| 👥 SDM | `/api/v1/hr` | Karyawan, absensi, cuti |
-| 💳 Penggajian | `/api/v1/payroll` | Hitung gaji, slip gaji, BPJS, PPh 21 |
-| 🗒️ Log Aktivitas | `/api/v1/activity-logs` | Audit trail semua modul |
+| Auth | `/api/v1/auth` | Login, logout, refresh token, profil |
+| Dashboard | `/api/v1/dashboard` | Ringkasan & widget semua modul |
+| Pengaturan | `/api/v1/settings` | Perusahaan, user, COA, departemen |
+| Keuangan | `/api/v1/finance` | Jurnal, buku besar, laporan keuangan |
+| Invoice | `/api/v1/invoices` | Buat, kirim, catat pembayaran invoice |
+| Inventori | `/api/v1/inventory` | Produk, stok, pergerakan barang |
+| Pembelian | `/api/v1/purchases` | PR, PO, penerimaan barang, supplier |
+| Penjualan | `/api/v1/sales` | SO, pelanggan, pengiriman, analitik |
+| Produksi | `/api/v1/production` | BOM, Work Order, QC |
+| SDM | `/api/v1/hr` | Karyawan, absensi, cuti |
+| Penggajian | `/api/v1/payroll` | Hitung gaji, slip gaji, BPJS, PPh 21 |
+| Log Aktivitas | `/api/v1/activity-logs` | Audit trail semua modul |
 
 ---
 
@@ -169,22 +169,22 @@ Content-Type: application/json
 | finance01 | Admin@12345 | FINANCE |
 | hr01 | Admin@12345 | HR |
 
-> ⚠️ **Ganti password default setelah setup!**
+> **Ganti password default setelah setup!**
 
 ---
 
 ## Fitur Utama
 
-### ✅ Otomatisasi Jurnal
+### Otomatisasi Jurnal
 Setiap transaksi di modul Pembelian, Penjualan, Produksi, dan Payroll akan **otomatis membuat jurnal keuangan** tanpa input manual.
 
-### ✅ Perhitungan Payroll Indonesia
+### Perhitungan Payroll Indonesia
 - BPJS Kesehatan (1% karyawan / 4% perusahaan)
 - BPJS TK - JHT (2% / 3.7%), JP (1% / 2%), JKK (0.89%), JKM (0.3%)
 - PPh 21 dengan tarif progresif sesuai UU HPP 2021
 - PTKP sesuai status pernikahan (TK/K + tanggungan)
 
-### ✅ Audit Trail Lengkap
+### Audit Trail Lengkap
 Semua aksi dari semua modul dicatat otomatis di `activity_logs` dengan:
 - User yang melakukan aksi
 - Modul & action
